@@ -17,6 +17,7 @@
 <p class="p1"><span class="s1">{{ content }}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% include projects.html %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% if site.topics %}</span></p>
+<p class="p1"><span class="s1">{% unless posts_total == 0 %}</span></p>
 <p class="p1"><span class="s1">{% include thoughts.html %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% endunless %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% else %}</span></p>
