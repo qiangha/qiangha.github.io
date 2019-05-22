@@ -14,7 +14,6 @@
 <body>
 <p class="p1"><span class="s1">{% include header.html %} {% if site.layout == 'stacked' %}</span></p>
 <p class="p1"><span class="s1">{% include masthead.html metadata=true %}</span></p>
-<p class="p1"><span class="s1">{% endif %}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>{% include footer.html %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% endif %} {% include footer.html %}<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
