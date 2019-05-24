@@ -8,7 +8,7 @@
 
 <style>
 
-div.a {
+  div.a {
     text-align: center;
   }
 
@@ -19,7 +19,14 @@ div.a {
       margin-top: 40px;
       margin-bottom:40px;
     }
+    p.ex {
+  color: rgb(248,248,248);
+    }
+
     </style>
+
+
+
 
 <img src="{{ user.avatar_url }}" class="circle center" style="max-width: 125px;">
 
@@ -164,7 +171,7 @@ div.a {
     {% endif %}
   </div>
   <div class="a">
-      <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+      <p class="mb-3 f4 ex">
           {{ user.bio }}
       </p>
     </div>
