@@ -4,8 +4,15 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
+<style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
 
-<img src="{{ user.avatar_url }}" class="circle mb-3 center" style="max-width: 150px;">
+<img src="{{ user.avatar_url }}" class="circle center" style="max-width: 150px;">
 
 {% if include.metadata %}
   <div class="f4 mb-6">
