@@ -20,7 +20,7 @@ div.a {
     }
     </style>
 
-<img src="{{ user.avatar_url }}" class="circle center" style="max-width: 125px;">
+<img src="{{ user.avatar_url }}" class="circle center" style="max-width: 150px;">
 
 
 {% if include.metadata %}
@@ -156,6 +156,11 @@ div.a {
             </a>
           </div>
         {% endfor %}
+        <div class="a">
+            <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+                {{ user.bio }}
+            </p>
+          </div>
       </div>
     {% endif %}
     {% if user.hireable %}
@@ -165,11 +170,7 @@ div.a {
   
   
 
-  <div class="a">
-  <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-      {{ user.bio }}
-  </p>
-</div>
+  
   
 
 {% endif %}
